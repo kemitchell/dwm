@@ -95,7 +95,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("saverussiansnippet") },
+	{ MODKEY,                       XK_r,      spawn,          SHCMD("saverussiansnippet") },
 };
 
 /* button definitions */
