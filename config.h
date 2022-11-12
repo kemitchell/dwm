@@ -99,7 +99,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("saverussiansnippet") },
 	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("saverussianvocabulary") },
-	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("pastetosnippets") },
+	{ MODKEY,                       XK_s,      spawn,          SHCMD("pastetosnippets") },
 };
 
 /* button definitions */
