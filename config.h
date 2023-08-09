@@ -90,7 +90,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_3,                      2)
 	TAGKEYS(                        XK_4,                      3)
 	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_Escape,                 5)
+	TAGKEYS(                        XK_grave,                  5)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("saverussiansnippet") },
 	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("saverussianvocabulary") },
