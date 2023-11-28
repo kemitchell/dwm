@@ -31,9 +31,9 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[tile]",      tile },    /* first entry is default */
-	{ "[float]",      NULL },    /* no layout function means floating behavior */
-	{ "[monocle]",      monocle },
+	{ "[T]",      tile },    /* first entry is default */
+	{ "[F]",      NULL },    /* no layout function means floating behavior */
+	{ "[M]",      monocle },
 };
 
 /* key definitions */
@@ -51,11 +51,13 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "kitty", NULL };
+static const char *devcmd[]  = { "kitty", "dev", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY|ShiftMask,             XK_backslash, spawn,          {.v = devcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
@@ -86,7 +88,9 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("saverussiansnippet") },
 	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("saverussianvocabulary") },
-	{ MODKEY,                       XK_s,      spawn,          SHCMD("pastetosnippets") },
+	{ MODKEY,                       XK_s,      spawn,          SHCMD("savespanishsnippet") },
+	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("savespanishvocabulary") },
+	{ MODKEY,                       XK_x,      spawn,          SHCMD("pastetosnippets") },
 };
 
 /* button definitions */
