@@ -90,6 +90,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("saverussianvocabulary") },
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("savespanishsnippet") },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("savespanishvocabulary") },
+	{ MODKEY          ,             XK_e,      spawn,          SHCMD("saveenglishsnippet") },
 	{ MODKEY,                       XK_x,      spawn,          SHCMD("pastetosnippets") },
 };
 
