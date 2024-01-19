@@ -92,8 +92,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("savespanishvocabulary") },
 	{ MODKEY          ,             XK_e,      spawn,          SHCMD("saveenglishsnippet") },
 	{ MODKEY,                       XK_x,      spawn,          SHCMD("pastetosnippets") },
-	{ MODKEY,                       XK_less,   spawn,          SHCMD("xrecordmacro") },
-	{ MODKEY,                       XK_greater, spawn,         SHCMD("xplaymacro") },
+	{ MODKEY,                       XK_semicolon,   spawn,          SHCMD("xrecordmacro") },
+	{ MODKEY,                       XK_acute, spawn,         SHCMD("xplaymacro") },
 };
 
 /* button definitions */
