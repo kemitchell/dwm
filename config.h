@@ -85,15 +85,15 @@ static Key keys[] = {
 	TAGKEYS(                        XK_4,                      3)
 	TAGKEYS(                        XK_5,                      4)
 	TAGKEYS(                        XK_grave,                  5)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ MODKEY,                       XK_r,      spawn,          SHCMD("saverussiansnippet") },
-	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("saverussianvocabulary") },
-	{ MODKEY,                       XK_s,      spawn,          SHCMD("savespanishsnippet") },
-	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("savespanishvocabulary") },
-	{ MODKEY          ,             XK_e,      spawn,          SHCMD("saveenglishsnippet") },
-	{ MODKEY,                       XK_x,      spawn,          SHCMD("pastetosnippets") },
-	{ MODKEY,                       XK_semicolon,   spawn,          SHCMD("xrecordmacro") },
-	{ MODKEY,                       XK_acute, spawn,         SHCMD("xplaymacro") },
+	{ MODKEY|ShiftMask,             XK_q,          quit,       {0} },
+	{ MODKEY,                       XK_r,          spawn,      SHCMD("saverussiansnippet") },
+	{ MODKEY|ShiftMask,             XK_r,          spawn,      SHCMD("saverussianvocabulary") },
+	{ MODKEY,                       XK_s,          spawn,      SHCMD("savespanishsnippet") },
+	{ MODKEY|ShiftMask,             XK_s,          spawn,      SHCMD("savespanishvocabulary") },
+	{ MODKEY,                       XK_e,          spawn,      SHCMD("saveenglishsnippet") },
+	{ MODKEY,                       XK_x,          spawn,      SHCMD("pastetosnippets") },
+	{ MODKEY,                       XK_semicolon,  spawn,      SHCMD("xrecordmacro") },
+	{ MODKEY,                       XK_apostrophe, spawn,      SHCMD("xplaymacro") },
 };
 
 /* button definitions */
