@@ -95,6 +95,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_x,          spawn,      SHCMD("clearscratch") },
 	{ MODKEY,                       XK_semicolon,  spawn,      SHCMD("xrecordmacro") },
 	{ MODKEY,                       XK_apostrophe, spawn,      SHCMD("xplaymacro") },
+	{ MODKEY,                       XK_BackSpace,  spawn,      SHCMD("screenshot") },
 };
 
 /* button definitions */
