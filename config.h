@@ -21,8 +21,14 @@ static const char *colors[][3]      = {
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "~"};
 
-static const Rule rules[] = {NULL};
-
+static const Rule rules[] = {
+	/* xprop(1):
+	 * WM_CLASS(STRING) = instance, class
+	 * WM_NAME(STRING) = title
+	 */
+	/* class      instance    title       tags mask     isfloating   monitor */
+	{ "xmessage", NULL,       NULL,       0,            1,           -1 },
+};
 /* layout(s) */
 static const float mfact     = 0.5; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
